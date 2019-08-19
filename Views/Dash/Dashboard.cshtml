@@ -1,0 +1,1687 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Dash/Layout.cshtml";
+}
+
+
+<div class="row" data-bind="visible: MainPage">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+            <div class="row">
+                <table style="width:100%;margin-bottom:10px;">
+                    <colgroup>
+                        <col style="width:30%;" />
+                        <col style="width:70%;" />
+                    </colgroup>
+                    <tr>
+                        <td align="center" class="pdT">
+                            <img src="~/Content/Images/r-user.png" style="height:70px;" />
+                        </td>
+                        <td align="center">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="usrhdr"> Mari van Loggerenberg</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fw500"> Wannabe Developer</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <div class="lftsubhdr">Email</div>
+                        </td>
+                        <td align="right">
+                            <div class="rgtansw">mari@testemail.com</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <div class="lftsubhdr">Phone</div>
+                        </td>
+                        <td align="right">
+                            <div class="rgtansw">082 857 7391</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <div class="lftsubhdr">Status</div>
+                        </td>
+                        <td align="right">
+                            <div class="rgtansw">VIP Traveller</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row">
+                <div class="vertical-tab mgnT2" role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#Section1" aria-controls="dashboard" role="tab" data-toggle="tab"><i class="fa fa-dashboard pdR2"></i>Dashboard</a></li>
+                        <li role="presentation"><a href="#Section2" aria-controls="personal" role="tab" data-toggle="tab"><i class="fa fa-user-circle pdR2"></i>Personal Information</a></li>
+                        <li role="presentation"><a href="#Section3" aria-controls="loyalty" role="tab" data-toggle="tab"><i class="fa fa-star pdR2"></i>Memberships/Loyalty</a></li>
+                        <li role="presentation"><a href="#Section4" aria-controls="preferences" role="tab" data-toggle="tab"><i class="fa fa-tags pdR2"></i>Preferences</a></li>
+                        <li role="presentation"><a href="#Section5" aria-controls="documents" role="tab" data-toggle="tab"><i class="fa fa-file-pdf-o pdR2"></i>Documents</a></li>
+                        <li role="presentation"><a href="#Section6" aria-controls="assignments" role="tab" data-toggle="tab"><i class="fa fa-phone pdR2"></i>Assignments</a></li>
+                        <li role="presentation"><a href="#Section7" aria-controls="audits" role="tab" data-toggle="tab"><i class="fa fa-bank pdR2"></i>Audits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+        <!-- Tab panes -->
+        <div class="tab-content tabs mytab">
+            <div role="tabpanel" class="tab-pane fade in active" id="Section1" style="opacity:unset;color:black;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <img src="~/Content/Images/3d1.png" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <img src="~/Content/Images/3d2.jpg" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <img src="~/Content/Images/3d3.jpg" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <img src="~/Content/Images/budget-pie-chart.jpg" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="~/Content/Images/CT-Chart-2-EN.png" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade mypane" id="Section2" style="opacity:unset;color:black;">
+                <h5>Personal Information</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="fname">First Name:</label>
+                            <input type="text" class="form-control" id="fname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="mname">Middle Names:</label>
+                            <input type="text" class="form-control" id="mname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" class="form-control" id="lname">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="fname">Gender:</label>
+                            <select class="myselect">
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Not Sure</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="ttle">Title:</label>
+                            <input type="text" class="form-control" id="ttle">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Location</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="sa1">Street Address 1:</label>
+                            <input type="text" class="form-control" id="sa1">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group  mgnB2">
+                            <label for="sa2">Street Address 2:</label>
+                            <input type="text" class="form-control" id="sa2">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group  mgnB2">
+                            <label for="city">City/Suburb:</label>
+                            <input type="text" class="form-control" id="city">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group  mgnB2">
+                            <label for="prov">Province:</label>
+                            <input type="text" class="form-control" id="prov">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="country">Country:</label>
+                            <input type="text" class="form-control" id="country">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="zip">Zip Code:</label>
+                            <input type="text" class="form-control" id="zip">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Contact (Personal)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="Cphone">Cell Phone:</label>
+                            <input type="tel" class="form-control" id="Cphone">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="wphone">Home Phone:</label>
+                            <input type="tel" class="form-control" id="wphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Contact (Work)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="wphone">Work Phone:</label>
+                            <input type="tel" class="form-control" id="wphone">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="altphone">Alternate Phone:</label>
+                            <input type="tel" class="form-control" id="altphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Contact (Other)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="rel">Relationship:</label>
+                            <input type="text" class="form-control" id="rel">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="rfname">First Name:</label>
+                            <input type="text" class="form-control" id="rfname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="rlname">Last Name:</label>
+                            <input type="text" class="form-control" id="rlname">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="remail">Email:</label>
+                            <input type="text" class="form-control" id="remail">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="rcell">Cell Phone:</label>
+                            <input type="tel" class="form-control" id="rcell">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="rphone">Work Phone:</label>
+                            <input type="text" class="form-control" id="rphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Identity</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="id">Id Number:</label>
+                            <input type="text" class="form-control" id="id">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Employment </h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="comp">Company:</label><br />
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                @*<option>Company A</option>
+                                <option>Company B</option>
+                                <option>Company C</option>
+                                <option>Company D</option>
+                                <option>Company E</option>*@
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="dept">Department:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Department A</option>
+                                <option>Department B</option>
+                                <option>Department C</option>
+                                <option>Department D</option>
+                                <option>Department E</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="job">Job Title:</label>
+                            <input type="text" class="form-control" id="job">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="empid">Employee Id:</label>
+                            <input type="text" class="form-control" id="empid">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="roles">Roles:</label>
+                            <input type="text" class="form-control" id="roles">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="status">Traveller Status:</label>
+                            <input type="text" class="form-control" id="status">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Travel</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="tmc">TMC:</label>
+                            <input type="text" class="form-control" id="tmc">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="cc">Cost Center:</label>
+                            <input type="text" class="form-control" id="cc">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="pgroup">Policy Group:</label>
+                            <input type="text" class="form-control" id="pgroup">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button class="saveBtn">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section3" style="opacity:unset;color:black;">
+                <h5 style="color:#7c9d8e;">Air</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="deptme">Loyalty Program:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>EBucks</option>
+                                <option>SAA Voyager</option>
+                                <option>Virgin Money</option>
+                                <option>Nedbank Greenbacks</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="arln">Airline:</label>
+                            <input type="text" class="form-control" id="arln">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="ln">Loyalty Number:</label>
+                            <input type="text" class="form-control" id="ln">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="ed">Enroll Date:</label>
+                            <input type="date" class="form-control" id="ed">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:5px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Car</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="ccomp">Loyalty Program:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>EBucks</option>
+                                <option>SAA Voyager</option>
+                                <option>Virgin Money</option>
+                                <option>Nedbank Greenbacks</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="cven">Car Vendor:</label>
+                            <input type="text" class="form-control" id="cven">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="Lnum">Loyalty Number:</label>
+                            <input type="text" class="form-control" id="Lnum">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="edt">Enroll Date:</label>
+                            <input type="text" class="form-control" id="edt">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Accommodation</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="htlchn">Loaylty Program:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>EBucks</option>
+                                <option>SAA Voyager</option>
+                                <option>Virgin Money</option>
+                                <option>Nedbank Greenbacks</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="htch">Hotel Chain:</label>
+                            <input type="text" class="form-control" id="htch">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="lnum">Loyalty Number:</label>
+                            <input type="text" class="form-control" id="lnum">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="edt">Enroll Date:</label>
+                            <input type="text" class="form-control" id="edt">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;margin-left:10px;margin-right:10px;color:black;"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button style="color:white;background-color:darkslategrey;padding:10px;border:none;float:right;">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section4" style="opacity:unset;color:black;">
+                <h5 style="color:#7c9d8e;">Flights</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="arprt">Preferred Airport:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>OR Tambo Intl</option>
+                                <option>Lanseria</option>
+                                <option>King shaka Intl</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="arlne">Preferred Airline:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>British Airways</option>
+                                <option>Mango</option>
+                                <option>Kulula</option>
+                                <option>SAA</option>
+                                <option>SafAir</option>
+                                <option>Airlink</option>
+                                <option>Emirates</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="cot">Class of Travel:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Economy</option>
+                                <option>First</option>
+                                <option>Business</option>
+                                <option>Premium</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="seat">Seat:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Window Seat</option>
+                                <option>Aisle Seat</option>
+                                <option>Front</option>
+                                <option>Back</option>
+                                <option>N/A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="meal">Meal Type:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Standard</option>
+                                <option>Vegetarian</option>
+                                <option>Vegan</option>
+                                <option>Halaal</option>
+                                <option>None</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:5px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Car</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="ccomp">Car Rental Company:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Avis</option>
+                                <option>Hertz</option>
+                                <option>Europcar</option>
+                                <option>Bidvest Car Rental</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="vht">Vehicle Group:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Economy</option>
+                                <option>Luxury</option>
+                                <option>Compact</option>
+                                <option>Standard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="pul">Pick-up Locations:</label>
+                            <input type="text" class="form-control" id="pul">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:5px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Transfer</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="ctrns">Car Rental Company:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Avis</option>
+                                <option>Hertz</option>
+                                <option>Europcar</option>
+                                <option>Bidvest Car Rental</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="vht">Vehicle Group:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Economy</option>
+                                <option>Luxury</option>
+                                <option>Compact</option>
+                                <option>Standard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="pul">Pick-up Locations:</label>
+                            <input type="text" class="form-control" id="pul">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Accommodation</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="htlchn">Hotel Chain:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>African Pride Hotels</option>
+                                <option>African Sun Hotels</option>
+                                <option>City Lodge Hotels</option>
+                                <option>Forever Resorts</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="rmtpe">Bed Type:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Double Bed</option>
+                                <option>Single Bed</option>
+                                <option>Luxury Suite</option>
+                                <option>Standard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="smk">Smoking:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Smoking Room</option>
+                                <option>Non-smoking Rooms</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="amn">Amenities:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" multiple>
+                                <option>Pool</option>
+                                <option>Wifi</option>
+                                <option>Laundry</option>
+                                <option>Spa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="str">Star Rating:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option><i class="fa fa-star"></i>1 Star</option>
+                                <option><i class="fa fa-star"></i><i class="fa fa-star"></i>2 Stars</option>
+                                <option><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>3 Stars</option>
+                                <option><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>4 Stars</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Special Requirements</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="spec">Special Requirements:</label>
+                            <textarea class="form-control" rows="5" id="spec"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;margin-left:10px;margin-right:10px;color:black;"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button style="color:white;background-color:darkslategrey;padding:10px;border:none;float:right;">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section5" style="opacity:unset;color:black;">
+                <h5 style="color:#7c9d8e;">Travel Documents</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="id">Passport Number:</label>
+                            <input type="text" class="form-control" id="id">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="passport">Passport Expiry Date:</label>
+                            <input type="text" class="form-control" id="passport">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="ctz">Citizenship:</label>
+                            <input type="text" class="form-control" id="ctz">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="passCountry">Country of Issue:</label>
+                            <input type="text" class="form-control" id="passCountry">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="nationality">Nationality:</label>
+                            <input type="text" class="form-control" id="nationality">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Driving Details (Local)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="drive">Driver's Licence:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>None</option>
+                                <option>Code 8</option>
+                                <option>Code 10</option>
+                                <option>Motorcycle</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="dex">Expiry Date:</label>
+                            <input type="date" class="form-control" id="dex">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Driving Details (International)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="drive">Driver's Licence:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>None</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="dex">Expiry Date:</label>
+                            <input type="date" class="form-control" id="dex">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;margin-left:10px;margin-right:10px;color:black;"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button style="color:white;background-color:darkslategrey;padding:10px;border:none;float:right;">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section6" style="opacity:unset;color:black;">
+                <h5 style="color:#7c9d8e;">Authorised Person(s)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="fname">First Name:</label>
+                            <input type="text" class="form-control" id="fname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="alname">Last Name:</label>
+                            <input type="text" class="form-control" id="alname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="title">Job Title:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Assistant</option>
+                                <option>Secretary</option>
+                                <option>Clerk</option>
+                                <option>Manager</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="Cphone">Cell Phone:</label>
+                            <input type="tel" class="form-control" id="Cphone">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="wphone">Work Phone:</label>
+                            <input type="tel" class="form-control" id="wphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;margin-left:10px;margin-right:10px;color:black;"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button style="color:white;background-color:darkslategrey;padding:10px;border:none;float:right;">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section7" style="opacity:unset;color:black;">
+                <h3>Audits</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" data-bind="visible: EditPage">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+            <div class="row">
+                <table style="width:100%;margin-bottom:10px;">
+                    <colgroup>
+                        <col style="width:30%;" />
+                        <col style="width:70%;" />
+                    </colgroup>
+                    <tr>
+                        <td align="center" class="pdT">
+                            <img src="~/Content/Images/r-user.png" style="height:70px;" />
+                        </td>
+                        <td align="center">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="usrhdr"> Mari van Loggerenberg</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fw500"> Wannabe Developer</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <div class="lftsubhdr">Email</div>
+                        </td>
+                        <td align="right">
+                            <div class="rgtansw">mari@testemail.com</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <div class="lftsubhdr">Phone</div>
+                        </td>
+                        <td align="right">
+                            <div class="rgtansw">082 857 7391</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <div class="lftsubhdr">Status</div>
+                        </td>
+                        <td align="right">
+                            <div class="rgtansw">VIP Traveller</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row">
+                <div class="vertical-tab mgnT2" role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#Section1" aria-controls="dashboard" role="tab" data-toggle="tab"><i class="fa fa-dashboard pdR2"></i>Dashboard</a></li>
+                        <li role="presentation"><a href="#Section2" aria-controls="personal" role="tab" data-toggle="tab"><i class="fa fa-user-circle pdR2"></i>Personal Information</a></li>
+                        <li role="presentation"><a href="#Section3" aria-controls="loyalty" role="tab" data-toggle="tab"><i class="fa fa-star pdR2"></i>Memberships/Loyalty</a></li>
+                        <li role="presentation"><a href="#Section4" aria-controls="preferences" role="tab" data-toggle="tab"><i class="fa fa-tags pdR2"></i>Preferences</a></li>
+                        <li role="presentation"><a href="#Section5" aria-controls="documents" role="tab" data-toggle="tab"><i class="fa fa-file-pdf-o pdR2"></i>Documents</a></li>
+                        <li role="presentation"><a href="#Section6" aria-controls="assignments" role="tab" data-toggle="tab"><i class="fa fa-phone pdR2"></i>Assignments</a></li>
+                        <li role="presentation"><a href="#Section7" aria-controls="audits" role="tab" data-toggle="tab"><i class="fa fa-bank pdR2"></i>Audits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+        <!-- Tab panes -->
+        <div class="tab-content tabs mytab">
+            <div role="tabpanel" class="tab-pane fade in active" id="Section1" style="opacity:unset;color:black;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <img src="~/Content/Images/3d1.png" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <img src="~/Content/Images/3d2.jpg" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <img src="~/Content/Images/3d3.jpg" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <img src="~/Content/Images/budget-pie-chart.jpg" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="~/Content/Images/CT-Chart-2-EN.png" style="width:100%;height:300px;margin-top:50px;" />
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade mypane" id="Section2" style="opacity:unset;color:black;">
+                <h5>Personal Information</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="fname">First Name:</label>
+                            <input type="text" class="form-control" id="fname" data-bind="textInput: fname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="mname">Middle Names:</label>
+                            <input type="text" class="form-control" id="mname" data-bind="textInput: mname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" class="form-control" id="lname"  data-bind="textInput: lname">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="gndr">Gender:</label>
+                            <select class="myselect" data-bind="options: gendertypes, value:chosengender">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="ttle">Title:</label>
+                            <input type="text" class="form-control" id="ttle" data-bind="textInput:ttle">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Location</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="sa1">Street Address 1:</label>
+                            <input type="text" class="form-control" id="sa1" data-bind="textInput: sa1">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group  mgnB2">
+                            <label for="sa2">Street Address 2:</label>
+                            <input type="text" class="form-control" id="sa2" data-bind="textInput: sa2">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group  mgnB2">
+                            <label for="city">City/Suburb:</label>
+                            <input type="text" class="form-control" id="city" data-bind="textInput: city">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group  mgnB2">
+                            <label for="prov">Province:</label>
+                            <input type="text" class="form-control" id="prov" data-bind="textInput: prov">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="country">Country:</label>
+                            <input type="text" class="form-control" id="country" data-bind="textInput: country">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="zip">Zip Code:</label>
+                            <input type="text" class="form-control" id="zip" data-bind="textInput: zip">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Contact (Personal)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" data-bind="textInput: email">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="Cphone">Cell Phone:</label>
+                            <input type="tel" class="form-control" id="Cphone" data-bind="textInput: Cphone">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="hphone">Home Phone:</label>
+                            <input type="tel" class="form-control" id="hphone" data-bind="textInput: hphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Contact (Work)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="wemail">Email:</label>
+                            <input type="email" class="form-control" id="wemail" data-bind="textInput: wemail">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="wphone">Work Phone:</label>
+                            <input type="tel" class="form-control" id="wphone" data-bind="textInput: wphone">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="altphone">Alternate Phone:</label>
+                            <input type="tel" class="form-control" id="altphone" data-bind="textInput: altphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Contact (Other)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="relshp">Relationship:</label>
+                            <input type="text" class="form-control" id="relshp" data-bind="textInput: relshp">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="rfname">First Name:</label>
+                            <input type="text" class="form-control" id="rfname" data-bind="textInput: rfname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="rlname">Last Name:</label>
+                            <input type="text" class="form-control" id="rlname" data-bind="textInput: rlname">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="remail">Email:</label>
+                            <input type="text" class="form-control" id="remail" data-bind="textInput: remail">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="rcell">Cell Phone:</label>
+                            <input type="tel" class="form-control" id="rcell" data-bind="textInput: rcell">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="rphone">Work Phone:</label>
+                            <input type="tel" class="form-control" id="rphone" data-bind="textInput: rphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Identity</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob" data-bind="value: dob">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="idnum">Id Number:</label>
+                            <input type="text" class="form-control" id="idnum" data-bind="textInput: idnum">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Employment </h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="comp">Company:</label><br />
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" data-bind="options: comp, value:chosencomp">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="dept">Department:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" data-bind="options: dept, value:chosendept">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="job">Job Title:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" data-bind="options: job, value:chosenjob">      
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="empid">Employee Id:</label>
+                            <input type="text" class="form-control" id="empid" data-bind="textInput: empid">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="status">Traveller Status:</label>
+                            <input type="text" class="form-control" id="status" data-bind="textInput: status">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Travel</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="tmc">TMC:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" data-bind="options: tmc, value:chosentmc">                         
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="cc">Cost Center:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" data-bind="options: costc, value:chosencostc">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="pgroup">Policy Group:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" data-bind="options: pgroup, value:chosenpgroup">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button class="saveBtn" data-bind="click:savepersonal">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section3" style="opacity:unset;color:black;">
+                <h5 >Air</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="deptme">Loyalty Program:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" data-bind="options:lprog, value:chosenprogram">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="arln">Airline:</label>
+                            <input type="text" class="form-control" id="arln" data-bind="textInput:arln">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="lnum">Loyalty Number:</label>
+                            <input type="text" class="form-control" id="lnum" data-bind="textInput:lnum">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="edate">Enroll Date:</label>
+                            <input type="date" class="form-control" id="edate" data-bind="value:edate">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Car</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="ccomp">Loyalty Program:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" data-bind="options:carprog, value:chosencarprog">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="cven">Car Vendor:</label>
+                            <input type="text" class="form-control" id="cven" data-bind="textInput:cven">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="CLnum">Loyalty Number:</label>
+                            <input type="text" class="form-control" id="CLnum" data-bind="textInput:clnum">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="edt">Enroll Date:</label>
+                            <input type="date" class="form-control" id="edt" data-bind="value:edt">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <h5>Accommodation</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        @*<div class="form-group mgnB2">
+                            <label for="htlchn">Loaylty Program:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" data-bind="options:Aprog, value:chosenAprog">
+                            </select>
+                        </div>*@
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="htch">Hotel Chain:</label>
+                            <input type="text" class="form-control" id="htch" data-bind="textInput:htch">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="Alnum">Loyalty Number:</label>
+                            <input type="text" class="form-control" id="Alnum" data-bind="textInput:Alnum">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group mgnB2">
+                            <label for="enrolldt">Enroll Date:</label>
+                            <input type="date" class="form-control" id="enrolldt" data-bind="value:enrolldt">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed myKT"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button class="saveBtn" data-bind="click:saveLoyalty">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section4" style="opacity:unset;color:black;">
+                <h5 style="color:#7c9d8e;">Flights</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="arprt">Preferred Airport:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>OR Tambo Intl</option>
+                                <option>Lanseria</option>
+                                <option>King shaka Intl</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="arlne">Preferred Airline:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>British Airways</option>
+                                <option>Mango</option>
+                                <option>Kulula</option>
+                                <option>SAA</option>
+                                <option>SafAir</option>
+                                <option>Airlink</option>
+                                <option>Emirates</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="cot">Class of Travel:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Economy</option>
+                                <option>First</option>
+                                <option>Business</option>
+                                <option>Premium</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="seat">Seat:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Window Seat</option>
+                                <option>Aisle Seat</option>
+                                <option>Front</option>
+                                <option>Back</option>
+                                <option>N/A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="meal">Meal Type:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Standard</option>
+                                <option>Vegetarian</option>
+                                <option>Vegan</option>
+                                <option>Halaal</option>
+                                <option>None</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:5px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Car</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="ccomp">Car Rental Company:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Avis</option>
+                                <option>Hertz</option>
+                                <option>Europcar</option>
+                                <option>Bidvest Car Rental</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="vht">Vehicle Group:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Economy</option>
+                                <option>Luxury</option>
+                                <option>Compact</option>
+                                <option>Standard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="pul">Pick-up Locations:</label>
+                            <input type="text" class="form-control" id="pul">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:5px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Transfer</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="ctrns">Car Rental Company:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Avis</option>
+                                <option>Hertz</option>
+                                <option>Europcar</option>
+                                <option>Bidvest Car Rental</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="vht">Vehicle Group:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Economy</option>
+                                <option>Luxury</option>
+                                <option>Compact</option>
+                                <option>Standard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="pul">Pick-up Locations:</label>
+                            <input type="text" class="form-control" id="pul">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Accommodation</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="htlchn">Hotel Chain:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>African Pride Hotels</option>
+                                <option>African Sun Hotels</option>
+                                <option>City Lodge Hotels</option>
+                                <option>Forever Resorts</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="rmtpe">Bed Type:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Double Bed</option>
+                                <option>Single Bed</option>
+                                <option>Luxury Suite</option>
+                                <option>Standard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="smk">Smoking:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Smoking Room</option>
+                                <option>Non-smoking Rooms</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="amn">Amenities:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;" multiple>
+                                <option>Pool</option>
+                                <option>Wifi</option>
+                                <option>Laundry</option>
+                                <option>Spa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="str">Star Rating:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option><i class="fa fa-star"></i>1 Star</option>
+                                <option><i class="fa fa-star"></i><i class="fa fa-star"></i>2 Stars</option>
+                                <option><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>3 Stars</option>
+                                <option><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>4 Stars</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Special Requirements</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="spec">Special Requirements:</label>
+                            <textarea class="form-control" rows="5" id="spec"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;margin-left:10px;margin-right:10px;color:black;"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button style="color:white;background-color:darkslategrey;padding:10px;border:none;float:right;">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section5" style="opacity:unset;color:black;">
+                <h5 style="color:#7c9d8e;">Travel Documents</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="id">Passport Number:</label>
+                            <input type="text" class="form-control" id="id">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="passport">Passport Expiry Date:</label>
+                            <input type="text" class="form-control" id="passport">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="ctz">Citizenship:</label>
+                            <input type="text" class="form-control" id="ctz">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="passCountry">Country of Issue:</label>
+                            <input type="text" class="form-control" id="passCountry">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="nationality">Nationality:</label>
+                            <input type="text" class="form-control" id="nationality">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Driving Details (Local)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="drive">Driver's Licence:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>None</option>
+                                <option>Code 8</option>
+                                <option>Code 10</option>
+                                <option>Motorcycle</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="dex">Expiry Date:</label>
+                            <input type="date" class="form-control" id="dex">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;color:black;margin-bottom:20px;"></div>
+                <h5 style="color:#7c9d8e;">Driving Details (International)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="drive">Driver's Licence:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>None</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="dex">Expiry Date:</label>
+                            <input type="date" class="form-control" id="dex">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;margin-left:10px;margin-right:10px;color:black;"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button style="color:white;background-color:darkslategrey;padding:10px;border:none;float:right;">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section6" style="opacity:unset;color:black;">
+                <h5 style="color:#7c9d8e;">Authorised Person(s)</h5>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="fname">First Name:</label>
+                            <input type="text" class="form-control" id="fname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="alname">Last Name:</label>
+                            <input type="text" class="form-control" id="alname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="title">Job Title:</label>
+                            <select style="height:38px;width:100%;border-color:gainsboro;border-radius:5px;">
+                                <option>Assistant</option>
+                                <option>Secretary</option>
+                                <option>Clerk</option>
+                                <option>Manager</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="Cphone">Cell Phone:</label>
+                            <input type="tel" class="form-control" id="Cphone">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-group" style="margin-bottom:10px;">
+                            <label for="wphone">Work Phone:</label>
+                            <input type="tel" class="form-control" id="wphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-separator kt-separator--space-lg kt-separator--border-dashed" style="margin-top:20px;width:100%;margin-left:10px;margin-right:10px;color:black;"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <button style="color:white;background-color:darkslategrey;padding:10px;border:none;float:right;">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section7" style="opacity:unset;color:black;">
+                <h3>Audits</h3>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,430 @@
+﻿@charset "UTF-8";
+
+body{
+    font-family:'Poppins';
+    font-size:13px;
+}
+
+.navigation {
+    height: 70px;
+    background: #262626;
+}
+
+.brand {
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 15px;
+    float: left;
+    line-height: 70px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li {
+            float: left;
+            position: relative;
+        }
+
+            nav ul li a,
+            nav ul li a:visited {
+                display: block;
+                padding: 0 20px;
+                line-height: 70px;
+                background: #262626;
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover,
+                nav ul li a:visited:hover {
+                    background: #7c9d8e;
+                    color: #ffffff;
+                }
+
+                nav ul li a:not(:only-child):after,
+                nav ul li a:visited:not(:only-child):after {
+                    padding-left: 4px;
+                    content: ' ▾';
+                }
+
+            nav ul li ul li {
+                min-width: 190px;
+            }
+
+                nav ul li ul li a {
+                    padding: 15px;
+                    line-height: 20px;
+                }
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #262626;
+    height: 70px;
+    width: 70px;
+}
+
+@media only screen and (max-width: 1130px) {
+    .nav-mobile {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        padding: 70px 0 15px;
+    }
+
+        nav ul {
+            display: none;
+        }
+
+            nav ul li {
+                float: none;
+            }
+
+                nav ul li a {
+                    padding: 15px;
+                    line-height: 20px;
+                }
+
+                nav ul li ul li a {
+                    padding-left: 30px;
+                }
+
+    .nav-dropdown {
+        position: static;
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .nav-list {
+        display: block !important;
+    }
+}
+
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+    #nav-toggle span,
+    #nav-toggle span:before,
+    #nav-toggle span:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 3px;
+        width: 35px;
+        background: #ffffff;
+        position: absolute;
+        display: block;
+        content: '';
+        transition: all 300ms ease-in-out;
+    }
+
+        #nav-toggle span:before {
+            top: -10px;
+        }
+
+        #nav-toggle span:after {
+            bottom: -10px;
+        }
+
+    #nav-toggle.active span {
+        background-color: transparent;
+    }
+
+        #nav-toggle.active span:before, #nav-toggle.active span:after {
+            top: 0;
+        }
+
+        #nav-toggle.active span:before {
+            transform: rotate(45deg);
+        }
+
+        #nav-toggle.active span:after {
+            transform: rotate(-45deg);
+        }
+
+@media screen and (max-width: 359px) {
+    #biglogo {
+        display: none;
+    }
+
+    #smalllogo {
+        display: block;
+        margin-top: 0.25em;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    #biglogo {
+        display: block;
+    }
+
+    #smalllogo {
+        display: none;
+    }
+}
+/*END OF NAVBAR SECTION*/
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.vertical-tab {
+    font-family: 'Poppins';
+    display: table;
+    width:100%;
+    padding-left:10px;
+}
+
+    .vertical-tab .nav-tabs {
+        display: table-cell;
+        width: 100%;
+        padding-top: 5px;
+        border: none;
+        vertical-align: top;
+        position: relative;
+    }
+
+        .vertical-tab .nav-tabs li {
+            float: none;
+            vertical-align: top;
+        }
+
+            .vertical-tab .nav-tabs li a {
+                color: #fff;
+                background-color:darkslategrey;
+                font-size: 13px;
+                font-weight: 300;
+                text-align: center;
+                letter-spacing: 1px;
+                padding: 10px 10px;
+                margin: 0 10px 20px 0;
+                border-radius: 0;
+                border: none;
+                position: relative;
+                z-index: 1;
+                transition: all 0.20s ease 0s;
+            }
+
+                .vertical-tab .nav-tabs li a:hover,
+                .vertical-tab .nav-tabs li.active a,
+                .vertical-tab .nav-tabs li.active a:hover {
+                    color: #fff;
+                    background: #7c9d8e;
+                    border: none;
+                }
+
+                .vertical-tab .nav-tabs li a:before,
+                .vertical-tab .nav-tabs li a:after {
+                    content: "";
+                    background-color: cadetblue;
+                    width: 20%;
+                    height: 3px;
+                    position: absolute;
+                    top: -5px;
+                    left: 0;
+                    transition: all 0.3s ease 0s;
+                }
+
+                .vertical-tab .nav-tabs li a:after {
+                    top: auto;
+                    left: auto;
+                    bottom: -5px;
+                    right: 0;
+                }
+
+                .vertical-tab .nav-tabs li.active a:before,
+                .vertical-tab .nav-tabs li a:hover:before,
+                .vertical-tab .nav-tabs li.active a:after,
+                .vertical-tab .nav-tabs li a:hover:after {
+                    width: 100%;
+                }
+
+    .vertical-tab .tab-content {
+        color: black;
+        background-color: white;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 23px;
+        padding: 20px;
+        outline: 3px solid #fff;
+        outline-offset: -8px;
+        display: table-cell;
+        position: relative;
+    }
+
+    h3{
+        font-size:16px;
+        padding-bottom:20px;
+    }
+
+        .vertical-tab .tab-content h3  {
+            margin: 0 0 10px 10px;
+        }
+
+@media only screen and (max-width: 479px) {
+    .vertical-tab .nav-tabs {
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+
+        .vertical-tab .nav-tabs li a {
+            margin: 0 0 20px;
+        }
+
+    .vertical-tab .tab-content {
+        display: block;
+        padding: 20px 15px 5px;
+        margin-top:10px;
+    }
+
+        .vertical-tab .tab-content h3 {
+            font-size: 18px;
+        }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+h5 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #7c9d8e;
+}
+
+.container {
+    background-color: white;
+}
+
+.pd{
+    padding:5px;
+}
+.pdT{
+    padding-top:5px;
+}
+.pdT2 {
+    padding-top: 10px;
+}
+.pdB {
+    padding-bottom: 5px;
+}
+
+.pdB2 {
+    padding-bottom: 10px;
+}
+.pdL {
+    padding-left: 5px;
+}
+
+.pdL2 {
+    padding-left: 10px;
+}
+.pdR {
+    padding-right: 5px;
+}
+
+.pdR2 {
+    padding-right: 10px;
+}
+.usrhdr {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.fw500{
+    font-weight:500;
+}
+.mgnT{
+    margin-top:5px;
+}
+.mgnT2{
+    margin-top:10px;
+}
+.mgnR {
+    margin-right: 5px;
+}
+
+.mgnR2 {
+    margin-right: 10px;
+}
+.mgnB {
+    margin-bottom: 5px;
+}
+
+.mgnB2 {
+    margin-bottom: 10px;
+}
+.mgnL {
+    margin-left: 5px;
+}
+
+.mgnL2 {
+    margin-left: 10px;
+}
+.lftsubhdr {
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 15px;
+    color: black;
+    padding-left: 10px;
+}
+.rgtansw {
+    font-size: 13px;
+    padding-top: 15px;
+    color: black;
+    padding-right: 10px;
+}
+.mytab {
+    background-color: white;
+    padding: 10px;
+    font-size: 13px;
+}
+.myselect {
+    height: 38px;
+    width: 100%;
+    border-color: gainsboro;
+    border-radius: 5px;
+}
+.myKT {
+    margin-top: 5px;
+    width: 100%;
+    color: black;
+    margin-bottom: 20px;
+}
+.saveBtn {
+    color: white;
+    background-color: darkslategrey;
+    padding: 10px;
+    border: none;
+    float: right;
+}
+
+
+

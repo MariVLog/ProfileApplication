@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                "families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"]
+            },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/style.bundle.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <img id="biglogo" src="http://www.grhousing.org/images/logo-block.png" />
+                    <img id="smalllogo" src="http://www.grhousing.org/images/logo-sm.png" />
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="@Url.Action("Dash","Dash")">My Trips</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Dash","Dash")">Account Settings</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Dash","Dash")">Password Reset</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fa fa-lock" style="padding-right:5px;"></i>Log Out</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </div>
+
+    <div style="margin-top:40px;" class="col-lg-8 col-lg-offset-2">
+        @RenderBody()
+    </div>
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/knockout.js"></script>
+    @*<script src="~/Scripts/profile.js"></script>
+    <script src="~/Scripts/add-user.js"></script>*@
+    <script src="~/AppScripts/Dashboard.js"></script>
+    <script>
+            $(document).ready(function ()
+            {
+               //KTAppUserProfile.init();
+            });
+    </script>
+    <script>
+        $(document).ready(function ()
+        {
+            var data = '@Html.Raw(Json.Encode(Model))';
+            AppRef = new AdminApplication.Application(data);
+            ko.applyBindings(AppRef);
+        });
+    </script>
+</body>
+</html>
